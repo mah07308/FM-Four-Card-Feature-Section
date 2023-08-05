@@ -10,11 +10,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -32,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-four-card-feature-section-ynmMaxeGLM](https://www.frontendmentor.io/solutions/responsive-four-card-feature-section-ynmMaxeGLM)
 - Live Site URL: [https://mah07308.github.io/FM-Four-Card-Feature-Section/](https://mah07308.github.io/FM-Four-Card-Feature-Section/)
 
 ## My process
