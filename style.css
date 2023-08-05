@@ -1,3 +1,59 @@
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Global Styles */
+
 :root {
   /* Primary Colors */
   --red: hsl(0, 78%, 62%);
@@ -6,20 +62,14 @@
   --blue: hsl(212, 86%, 64%);
 
   /* Neutral Colors */
-  --very-dark-blue: hsl(234, 12%, 34%);
+  --very-dark-blue: #4c4e61;
   --grayish-blue: hsl(229, 6%, 66%);
   --very-light-gray: hsl(0, 0%, 98%);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+p {
+  font-size: 0.9375rem;
+  color: var(--grayish-blue);
 }
 
 body {
@@ -28,8 +78,84 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* background-color: #333; */
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-blue);
 }
+
+/* Mobile Styles */
+
+.main__container {
+  width: 100vw;
+  max-width: 24rem;
+  padding: 4rem 2rem;
+}
+
+.main__heading {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.main__heading--light {
+  font-weight: 200;
+  text-align: left;
+}
+
+.main__description {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.cards__container {
+  margin-top: 3rem;
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0.5rem 1rem 1rem 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0.5rem;
+}
+
+.card__heading {
+  font-size: 1.25rem;
+}
+
+.card__description {
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+}
+
+.card__image {
+  width: 3.5rem;
+  height: 3.5rem;
+  align-self: flex-end;
+  margin-top: 1.5rem;
+}
+
+.card--supervisor {
+  border-top: 0.3rem solid var(--cyan);
+}
+
+.card--team-builder {
+  border-top: 0.3rem solid var(--red);
+}
+.card--karma {
+  border-top: 0.3rem solid var(--orange);
+}
+.card--calculator {
+  border-top: 0.3rem solid var(--blue);
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+/* FM Styles */
 
 .attribution {
   font-size: 11px;
